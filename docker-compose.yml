@@ -1,0 +1,18 @@
+version: "2.3"
+services:
+  aws-services:
+    image: node:20
+    working_dir: /app
+    command: bash -c "yarn && yarn run dev"
+    volumes:
+      - .:/app:z
+    container_name: aws-services
+    ports:
+      - "3030:3030"
+    environment:
+      - AWS_ZONE=/hostedzone/Z0XXXXXXXX
+      - AWS_DOMAIN=your.domain.com
+      - AWS_KEY=XXXXXXXXXXXXXXXX
+      - AWS_SECRET=XXXXXXXXXXXXXXXXXXXXX
+      - AWS_REGION=us-east-01
+      - AWS_IP=00.00.00.000
