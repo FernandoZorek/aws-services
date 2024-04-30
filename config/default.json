@@ -5,5 +5,13 @@
   "paginate": {
     "default": 10,
     "max": 50
+  },
+  "aws": {
+    "zone": "AWS_ZONE",
+    "domain": "AWS_DOMAIN",
+    "accessKeyId": "AWS_KEY",
+    "secretAccessKey": "AWS_SECRET",
+    "region": "AWS_REGION",
+    "ip": "AWS_IP"
   }
 }
