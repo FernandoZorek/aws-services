@@ -13,6 +13,8 @@
 - Creating Route 53 domains: Allows creating new domains in your AWS account.
 - Deleting Route 53 domains: Allows deleting existing domains in your AWS
 
+Note: Only subdomain management is enabled in this project, but it can be edited to manage domains.
+
 ## Tech
 
 This project uses several open source projects to function correctly::
